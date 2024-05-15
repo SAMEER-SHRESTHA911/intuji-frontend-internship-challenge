@@ -6,7 +6,9 @@
   --white: #ffffff;
   --max-width: 1200px;
 }
-
+h1{
+  font-weight: 900;
+}
 * {
   padding: 0;
   margin: 0;
@@ -176,7 +178,7 @@
 }
 .subscribe input{
   width: 24.3125em;
-  height: 3.25em;
+  height: 3.9em;
   background: rgba(238, 238, 255, 1);
   border: none;
   text-align: left;
@@ -271,12 +273,17 @@
   flex-direction: row;
   justify-content: space-between;
   padding-left: -2em;
+  margin-left: -2em;
+}
+.best_practices{
+  /* margin-left: 2em; */
 }
 .best_practices > p{
   font-size: 1.8125em;
   font-weight: 700;
   line-height: 36px;
   margin-bottom: 2em;
+  margin-top: 0.75em;
 }
 .testimonials{
   display: flex;
@@ -293,6 +300,7 @@
   margin-bottom: 5em;
 }
 .testimonials__card{
+  position: relative;
   display: flex;
   flex-direction: row;
   margin: 1.25em;
@@ -301,6 +309,11 @@
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   padding: 1.25em;
   align-items: flex-start;
+}
+.testimonials__card > img{
+  position: absolute;
+  top: -1.25em;
+  left: 2.25em;
 }
 .card__desc{
   display: flex;
@@ -311,16 +324,19 @@
   width: 24em;
 }
 .card__desc > b{
-  font-size: 1.5625em;
-  color: black;
-  font-weight: 900;
-  margin-bottom: 1em;
-  margin-top: 2em;
-}
-.card__desc > p{
-  font-size: 1.25em;
+  font-size: 1.5em;
   color: black;
   font-weight: 700;
+  margin-bottom: 1em;
+  margin-top: 2em;
+  margin-left: 1em;
+  margin-right: 0.5em;
+}
+.card__desc > p{
+  font-size: 1.2em;
+  color: black;
+  font-weight: 700;
+  margin-left: 1em;
 }
 .stats img{
   height: 16em;
@@ -336,18 +352,19 @@
 .testimonials__title > h1{
   font-size: 4.4375em;
   margin-bottom: 0.40em;
+  font-weight: 900;
 }
 .testimonials__title > p{
   font-size: 1em;
   color: black;
   width: 40em;
   margin-bottom: 4em;
+  font-weight: 600;
 }
 .features{
   display: flex;
   flex-direction: column;
-  /* margin-left: 7.5em; */
-  /* margin-right: 7.5em; */
+  padding-top: 8em;
   background-color: rgba(201, 231, 242, 1);
 }
 .features__container{
@@ -363,6 +380,7 @@
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   padding: 2em;
   background-color: white;
+  font-weight: 600;
 }
 .box__card__two{
   display: flex;
@@ -379,22 +397,322 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  font-weight: 800;
   line-height: 2.1875em;
+}
+.box_card_child b{
+  font-weight: 900;
 }
 .features > h1{
   font-size: 4.4375em;
   margin-bottom: 0.5em;
   margin-left: 2em;
+  font-weight: 900;
 }
 .features > p{
   font-size: 1em;
   width: 34.8125em;
   margin-left: 9em;
+  font-weight: 600;
 }
 .box__card > img{
   margin: 1em 0;
 }
 .box__card > h1{
   margin: 1em 0;
+  font-weight: 900;
+}
+
+.portfolio{
+  margin: 6em 7.5em;
+}
+.portfolio__container{
+  padding: 1em;
+}
+.portfolio__first__row{
+  display: flex;
+  flex-direction: row;
+}
+.portfolio__second__row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5em;
+}
+.number{
+  margin-bottom: 2em;
+  font-size: 1.5em;
+  font-weight: 800;
+  line-height: 1.5em;
+}
+.box__content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25em;
+  color: rgba(117, 112, 149, 1)
+}
+.box__content > img{
+  object-fit: none;
+}
+.box__desc{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: 800;
+  line-height: 1.5em;
+  color: black;
+}
+.portfolio__title > b{
+  font-size: 3em;
+  font-weight: 900;
+}
+.portfolio__title > p{
+  margin-top: 1em;
+}
+.portfolio__tile{
+  width: 20em;
+}
+.portfolio__quote{
+  position: relative;
+  background-color: rgba(196, 196, 196, 0.3);
+  border-radius: 1em;
+  height: 13em;
+  width: 30em;
+  margin-left: 10em;
+  padding: 1em;
+  position: relative;
+}
+.portfolio__quote > p{
+  margin-top: 2em;
+  margin-left: 1em;
+  font-size: 1em;
+  font-weight: 600;
+}
+.portfolio__quote > img{
+  object-fit: none;
+  position: absolute;
+  top: -1.25em;
+  left: 2em;
+}
+.track__container{
+  background-color: rgba(250, 251, 255, 1);
+  display: flex;
+  flex-direction: row; 
+  margin-left: 7.5em;
+  margin-right: 7.5em;
+  justify-content: space-between;
+  margin-bottom: 5em;
+}
+.left__div{
+  position: relative;
+  background-image: url('assets/Mask\ group.png');
+  background-color: rgba(219, 241, 250, 1);
+  border-radius: 1em;
+  overflow:visible;
+  padding: 2em;
+  width: 30em;
+}
+.track__child > img{
+  object-fit: contain;
+}
+.track__child1, 
+.track__child2, 
+.track__child3, 
+.track__child4{
+  width: 25em;
+  height: 5em;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  border-radius: 1em;
+  margin-bottom: 1.5em;
+  margin-left: 1em;
+  padding-left: 1em;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.track__child2{
+  margin-left: 10em;
+}
+.track__child3{
+  margin-left: 7em;
+}
+.track__child4{
+  margin-bottom: -1em;
+}
+.cash{
+  background-color: rgba(55, 52, 169, 0.1);
+  border-radius: 1em;
+  width: 5em;
+  color: rgba(55, 52, 169, 1);
+  font-weight: 600;
+  margin-bottom: 0.6em;
+}
+.track__desc > p{
+  color: rgba(117, 112, 149, 1);
+}
+.right__div{
+  margin-left: 15em;
+}
+.right__div > h1{
+  font-size: 3em;
+  font-weight: 900;
+  margin-bottom: 0.5em;
+}
+.right__div > p{
+  font-size: 1em;
+  color: rgba(117, 112, 149, 1);
+  padding-bottom: 1.5em;
+  font-weight: 500;
+  border-bottom : 3px solid rgba(117, 112, 149, 0.3);
+}
+.bluetext{
+  color: rgba(55, 52, 169, 1);
+  font-weight: 600;
+}
+.track__bullets{
+  margin-top: 2em;
+}
+.bullet{
+  display: flex;
+  flex-direction: row;  
+  gap: 1em;
+  margin-bottom: 0.8em;
+  color: rgba(117, 112, 149, 1);
+  font-weight: 600;
+}
+.save__container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 7.5em;
+  margin-right: 7.5em;
+  margin-bottom: 5em;
+  margin-top: 10em;
+  position: relative;
+}
+.save__left__div{
+  display: flex;
+  flex-direction: column;
+  gap:1em;
+  width: 40em;
+}
+.save__left__div > h1{
+  font-size: 3em;
+  font-weight: 900;
+}
+  .save__left__div > .portfolio__quote{
+    margin-left: -0.5em;
+  }
+.save__desc{
+  width:25em;
+  margin-bottom: 1em;
+}
+.save__right__div{
+  z-index: -1;
+  background-color: rgba(219, 241, 250, 1);
+  border-radius: 1em;
+  height: 30em;
+  width: 30em;
+  right: 100px;
+}
+
+.save__image1 img,
+.save__image2 img{
+  position: absolute;
+}
+.save__image2 img{
+  object-fit: contain;
+  z-index: -1;
+  width: 42.8125em;
+  height: 37.5em;
+  left: 37.5em;
+  bottom: 0.625em;
+  
+}
+.save__image1 img{
+  object-fit: contain;
+  left: 31.25em;
+  top: 12.5em;
+  
+}
+.faq__container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 7.5em;
+  margin-right: 15em;
+  margin-bottom: 5em;
+}
+.faq__title{
+  margin-bottom: 2em;
+}
+.faq__title > h1{
+  font-size: 4em;
+  font-weight: 900;
+}
+.faq__left__div{
+  width: 40em;
+}
+.faq__card{
+  border-radius: 1em;
+  border: 0.1em solid rgba(229, 229, 234, 1);
+  /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1.15em;
+  width: 42.5em;
+  margin-bottom: 0.7em;
+  /* margin-right: 5em; */
+}
+.card__left > h1{
+  font-size: 1.15em;
+  font-weight: 900;
+}
+.card__left p{
+  margin-top: 0.8em;
+  font-weight: 500;
+}
+.card__right{
+  display: flex;
+  flex-direction: column;
+}
+.card__right a{
+  font-size: 2em;
+  font-weight: 400;
+  color: black;
+  text-decoration: none;
+  margin-top: -0.5em;
+}
+.faq__right__div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 12em;
+  /* margin-left: -5em; */
+  border-radius: 1em;
+  border:0.1em solid rgba(229, 229, 234, 1);
+  padding-top: 5em;
+  padding-left: 2.5em;
+  padding-right: 2em;
+  width: 25em;
+  gap: 1.5em;
+  text-align: center;
+}
+.faq__right__div > .button_primary{
+  background-color: rgba(255, 127, 92, 1);
+  width: 20em;
+  height: 5em;
+  /* margin-bottom: -2em; */
+}
+.faq__right__div > .button_primary:hover{
+  background-color: rgba(255, 127, 92, 0.8);
+}
+.faq__right__div p{
+  font-weight: 500;
+  margin-bottom: 3.5em;
 }
