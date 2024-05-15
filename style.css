@@ -22,7 +22,7 @@ h1{
   display: flex;
   justify-content: space-around;
   margin-bottom: 0.625em;
-  margin-top: 1.875em;
+  padding-top: 1.875em;
 }
 
 .nav_group_container {
@@ -117,6 +117,8 @@ h1{
   justify-content: center;
   background: rgba(245, 246, 248, 1); 
   padding: 4.375em 5.625em 3.125em; 
+  position: relative;
+  z-index: 2;
 }
 .footer_first_column{
   display: flex;
@@ -700,6 +702,7 @@ h1{
   padding-left: 2.5em;
   padding-right: 2em;
   width: 25em;
+  height: 30em;
   gap: 1.5em;
   text-align: center;
 }
@@ -715,4 +718,89 @@ h1{
 .faq__right__div p{
   font-weight: 500;
   margin-bottom: 3.5em;
+}
+.hero__section{
+  background: linear-gradient(292.12deg, #62BADA -35.02%, #C9E7F2 78.96%);
+}
+.hero__container{
+  display: flex;
+  margin-left: 7.5em;
+  overflow: hidden;
+}
+.hero__left{
+  width: 50em;
+  margin-top: 10em;
+}
+.hero__left h1{
+  font-size: 4.4375em;
+  font-weight: 900;
+  margin-bottom: 0.5em;
+}
+.hero__left p{
+  font-size: 1em;
+  width: 30em;
+  margin-bottom: 2em;
+  color: rgba(100, 96, 125, 1);
+  font-weight: 400;
+}
+.get__started{
+  border-radius: 2.5em;
+  border: none;
+  height: 4em;
+  width: 12em;
+  background-color: rgba(55, 52, 169, 1);
+  color: white;
+}
+button:hover{
+  cursor: pointer;
+}
+.hero__second{
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  margin-bottom: 3em;
+}
+.hero__second button{
+  align-self: center;
+}
+.hero__second a{
+  text-decoration: none;
+  color: rgba(55, 52, 169, 1);
+  font-weight: 500;
+}
+.hero__last{
+  display: flex;
+  flex-direction: row;
+  gap: 2.5em;
+  align-items: center;
+  margin-bottom: 5em;
+}
+.last__one,
+.last__two{
+  display: flex;
+  align-items: center;
+  gap:0.5em;
+}
+.hero__link{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.hero__right{
+  position: relative;
+}
+.hero__right img{
+  position: absolute;
+  height: 48em;
+  object-fit: contain;
+  
+  top: 2em;
+  z-index: 1;
+}
+.plus{
+  cursor: pointer;
+}
+.faq__card > .card__left p{
+  display: hidden;
 }
